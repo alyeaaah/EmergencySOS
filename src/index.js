@@ -20,7 +20,7 @@ export default class Main extends Component {
         }, this.state.interval[this.state.intervalSelect]);
         await this.initSound()
         let aa = await this.checkVersion()
-        if (aa > 2) {
+        if (aa > 3) {
             this.setState({needUpdate:true})
         }
     }
