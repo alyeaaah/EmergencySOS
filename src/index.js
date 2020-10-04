@@ -95,8 +95,8 @@ export default class Main extends Component {
     render() {
         return (
             <View style={{ flex: 1,height:"100%"}}>
-                <View style={{flex:1,height:'100%',justifyContent:"center",backgroundColor:(this.state.bgColor ? "red" : "white" )}}>
-                    <Text style={{fontSize:140,fontWeight:"bold",transform: [{ rotate: "90deg" }], color:(!this.state.bgColor ? "red" : "white" ) }}>S.O.S</Text>
+                <View style={{flex:1,height:'100%',justifyContent:"center",backgroundColor:(this.state.bgColor ? "red" : "yellow" )}}>
+                    <Text style={{fontSize:140,fontWeight:"bold",transform: [{ rotate: "90deg" }], color:(!this.state.bgColor ? "red" : "yellow" ) }}>S.O.S</Text>
                 </View>
                 <View style={{position:"absolute", width:"100%",bottom:10, flex:1,flexDirection:"row",justifyContent:"center"}}>
                     {
@@ -109,7 +109,7 @@ export default class Main extends Component {
                         })  
                     }
                 </View>
-                <Text style={{position:"absolute", bottom:0, fontSize:8,right:0, color:"rgba(255,0,0,1)"}}>@zzaula</Text>
+                <Text style={{position:"absolute", bottom:0, fontSize:8,right:0, color:"rgba(255,,0,1)"}}>@zzaula</Text>
                 {this.state.needUpdate && 
                 <View style={{position:"absolute", bottom:0, top:0, flex:1, width:"100%",backgroundColor:'#000000',color:"#fff",justifyContent:"center"}}>
                     <Text style={{color:"white", width:"100%",textAlign:"center"}}>Application Need Update</Text>
